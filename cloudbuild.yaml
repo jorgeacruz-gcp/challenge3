@@ -21,6 +21,4 @@ steps:
   - '--platform'
   - 'managed'
   # Optional: if you want to allow unauthenticated access
-  - '--allow-unauthenticated'
-
-~                                               
+  - '--allow-unauthenticated'                                              
