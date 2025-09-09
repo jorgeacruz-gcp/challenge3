@@ -12,7 +12,7 @@ steps:
   args:
   - 'run'
   - 'deploy'
-  - 'my-service'  # Replace with your service name
+  - 'challenge3-test'  # Replace with your service name
   - '--image'
   - 'us-central1-docker.pkg.dev/jorgeacruz-pf-dev/challenge3-repogcp/my-build:prod1'
   - '--region'
