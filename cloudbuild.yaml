@@ -6,8 +6,6 @@ steps:
 # Step 2: Push the image to the Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'push', 'us-central1-docker.pkg.dev/jorgeacruz-pf-dev/challenge3-repogcp/my-build:prod1' ]
-  options:
-    logging: CLOUD_LOGGING_ONLY
 
 # Step 3: Deployment to Cloud Run after image is pushed
 - name: 'gcr.io/cloud-builders/gcloud'
@@ -23,4 +21,5 @@ steps:
   - 'managed'
   # Optional: if you want to allow unauthenticated access
   - '--allow-unauthenticated'
-   
+  options:
+    logging: CLOUD_LOGGING_ONLY
