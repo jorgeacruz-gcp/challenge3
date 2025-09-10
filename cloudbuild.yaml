@@ -7,10 +7,10 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'push', 'us-central1-docker.pkg.dev/jorgeacruz-pf-dev/challenge3-repogcp/my-build:prod1' ]
 
-steps:
+# pip
 - name: 'python'
   entrypoint: 'pip'
-  args: ['install', '-r', 'requirements.txt', '--user']
+  args: ['install', '-r', 'requirements.txt']
 
 # Step 3: Deployment to Cloud Run after image is pushed
 - name: 'gcr.io/cloud-builders/gcloud'
