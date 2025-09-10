@@ -5,8 +5,8 @@ FROM python:3.8
 WORKDIR /app
 
 # Copy the requirements file into the container and install dependencies
-#COPY requirements.txt requirements.txt
-#RUN pip install -r requirements.txt
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy the rest of the application code into the container
 COPY . .
