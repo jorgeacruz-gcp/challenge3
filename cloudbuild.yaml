@@ -8,9 +8,9 @@ steps:
   args: [ 'push', 'us-central1-docker.pkg.dev/jorgeacruz-pf-dev/challenge3-repogcp/my-build:prod1' ]
 
 # pip
-- name: 'python'
-  entrypoint: 'pip'
-  args: ['install', '-r', 'requirements.txt']
+#- name: 'python'
+#  entrypoint: 'pip'
+#  args: ['install', '-r', 'requirements.txt']
 
 # Step 3: Deployment to Cloud Run after image is pushed
 - name: 'gcr.io/cloud-builders/gcloud'
@@ -27,5 +27,5 @@ steps:
   - '--allow-unauthenticated'
 options:
  logging: CLOUD_LOGGING_ONLY
- pool:
-   name: 'projects/jorgeacruz-pf-dev/locations/us-central1/workerPools/private-challenge3'
+   # pool:
+   # name: 'projects/jorgeacruz-pf-dev/locations/us-central1/workerPools/private-challenge3'
