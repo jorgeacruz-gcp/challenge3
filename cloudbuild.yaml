@@ -27,5 +27,5 @@ steps:
   - '--allow-unauthenticated'
 options:
  logging: CLOUD_LOGGING_ONLY
-   # pool:
-   # name: 'projects/jorgeacruz-pf-dev/locations/us-central1/workerPools/private-challenge3'
+ pool:
+   name: 'projects/jorgeacruz-pf-dev/locations/us-central1/workerPools/private-challenge3'
