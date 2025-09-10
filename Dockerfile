@@ -15,5 +15,5 @@
 #CMD ["python", "app.py"]
 
 FROM python:3
-ADD app.py
+ADD app.py /
 CMD [ "python", "./app.py"]
