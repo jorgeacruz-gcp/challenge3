@@ -23,4 +23,4 @@ steps:
 options:
  logging: CLOUD_LOGGING_ONLY
  pool:
-   name: 'projects/jorgeacruz-pf-dev/locations/us-central1/workerPools/private2-challenge3'
+   name: 'projects/jorgeacruz-pf-dev/locations/us-central1/workerPools/private-challenge3'
